@@ -39,7 +39,6 @@ func ReadFile(path string) ([]byte, error) {
 		file, err := os.Open(path)
 		if err != nil {
 			return nil, err
-
 		}
 
 		defer func(file *os.File) {
